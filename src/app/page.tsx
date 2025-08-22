@@ -3,41 +3,72 @@ import ContentContainer from "@/components/container/ContentContainer";
 import Image from "next/image";
 import Link from "next/link";
 
+const Service = ({item, icon}:{item:linkProps, icon:React.ReactNode}) => {
+  return (
+    <div>hello</div>
+  )
+}
+
 export default function Home() {
   return (
-    <main className="pt-25 md:pt-30 relative overflow-hidden">
-      {/* background color */}
-      <div className="absolute inset-0 bg-[url(/image/bg-jasa-web-sby.png)] bg-cover opacity-30 z-0 transform -skew-y-5 -translate-y-1/8"/>
-      
-      <ContentContainer>
-        {/* landing section */}
-        <section id="landing" className="relative py-10 md:py-7 flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-6">
-          {/* typowriting */}
-          <div className="w-full md:w-[50%] space-y-6">
-            <h1 className="capitalize text-[2rem] lg:text-[3rem] font-semibold text-gray-700">
-              jasa pembuatan <span className="text-purple-500">website</span> terbaik di surabaya
-            </h1>
-            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ipsa iure sint dolorum cum omnis.</p>
-            <div className="flex items-center gap-2">
-              <Link href={'#'}>
-                <Button className="bg-purple-400 shadow-md cursor-pointer hover:scale-105 text-sm font-semibold text-white">
-                  <span>promo website</span>
-                </Button>
-              </Link>
-              <Link href={'#'}>
-                <Button className="bg-gray-100 cursor-pointer hover:bg-purple-400 text-sm font-semibold text-purple-600 group">
-                  <span className="group-hover:text-white">more about us</span>
-                </Button>
-              </Link>
+    <main className="">
+      {/* landing section */}
+      <section id='landing' className="relative overflow-hidden pt-20 md:pt-25">
+        {/* background color */}
+        <div className="absolute inset-0 bg-[url(/image/bg-jasa-web-sby.png)] bg-cover opacity-30 z-0 transform -skew-y-5 -translate-y-1/8"/>
+
+        <ContentContainer>
+          <div className="relative py-10 md:py-7 flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-6">
+            {/* typowriting */}
+            <div className="w-full md:w-[50%] space-y-6">
+              <h1 className="capitalize text-[2rem] lg:text-[3rem] font-semibold text-gray-700">
+                jasa pembuatan <span className="text-purple-500">website</span> terbaik di surabaya
+              </h1>
+              <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ipsa iure sint dolorum cum omnis.</p>
+              <div className="flex items-center gap-2">
+                <Link href={'#'}>
+                  <Button className="bg-purple-400 shadow-md cursor-pointer hover:scale-105 text-sm font-semibold text-white">
+                    <span>promo website</span>
+                  </Button>
+                </Link>
+                <Link href={'#'}>
+                  <Button className="bg-gray-100 cursor-pointer hover:bg-purple-400 text-sm font-semibold text-purple-600 group">
+                    <span className="group-hover:text-white">more about us</span>
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* image */}
+            <div className="w-full h-[300px] md:w-[400px] md:h-[400px] xl:w-[450px] xl:h-[488px]">
+              <Image src={'/image/jasa-website-surabay-rev.png'} alt="jasa-website-surabay-rev.png" width={500} height={500} className="w-full h-full" />
             </div>
           </div>
+        </ContentContainer>
+      </section>
 
-          {/* image */}
-          <div className="w-full h-[300px] md:w-[400px] md:h-[400px] xl:w-[450px] xl:h-[488px]">
-            <Image src={'/image/jasa-website-surabay-rev.png'} alt="jasa-website-surabay-rev.png" width={500} height={500} className="w-full h-full" />
+      {/* our service */}
+      <section id="our-services" className="md:mt-15 lg:mt-25">
+        <ContentContainer>
+          <div className="flex flex-col gap-10 items-center">
+            {/* heading */}
+            <div className="text-center">
+              <span className="uppercase mb-10 text-sm md:text-md text-gray-500 font-semibold">our service</span>
+              <div className="mt-5 -space-y-1">
+                <h1 className="capitalize text-[1rem] md:text-[2rem] font-semibold text-gray-700">
+                  <span className="text-purple-500">website</span> profesional dan <span className="text-purple-500">SEO</span> bergaransi
+                </h1>
+                <h1 className="capitalize text-[1rem] md:text-[2rem] font-semibold text-gray-700">solusi digital terbaik untuk bisnis</h1>
+              </div>
+            </div>
+
+            {/* services */}
+            <div className="flex items-center justify-between">
+
+            </div>
           </div>
-        </section>
-      </ContentContainer>
+        </ContentContainer>
+      </section>
     </main>
   );
 }
