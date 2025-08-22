@@ -1,11 +1,18 @@
 import Button from "@/components/buttons/Button";
 import ContentContainer from "@/components/container/ContentContainer";
+import { OUR_SERVICES } from "@/const";
+import { ComputerIcon, FeatherIcon, InstagramIcon, MegaPhoneIcon, PhoneIcon, SearchIcon } from "@/icons";
 import Image from "next/image";
 import Link from "next/link";
 
-const Service = ({item, icon}:{item:linkProps, icon:React.ReactNode}) => {
+const Service = ({item, icon, color}:{item:linkProps, icon:React.ReactNode, color:string}) => {
   return (
-    <div>hello</div>
+    <Link href={item.link} className="group">
+      <div className="flex flex-col items-center text-center gap-5">
+        <div className={`group-hover:scale-105 p-5 md:p-8 lg:p-10 rounded-xl transition-all duration-300 ease-in-out ${color}`}>{icon}</div>
+        <span className="group-hover:scale-105 transition-all duration-300 ease-in-out text-sm md:text-md lg:text-xl capitalize">{item.label}</span>
+      </div>
+    </Link>
   )
 }
 
@@ -48,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* our service */}
-      <section id="our-services" className="md:mt-15 lg:mt-25">
+      <section id="our-services" className="py-10 md:py-15 lg:py-25">
         <ContentContainer>
           <div className="flex flex-col gap-10 items-center">
             {/* heading */}
@@ -63,8 +70,57 @@ export default function Home() {
             </div>
 
             {/* services */}
-            <div className="flex items-center justify-between">
+            <div className="w-full xl:w-[90%] 2xl:w-[80%] grid grid-cols-2 gap-5 md:gap-0 md:flex md:items-center md:justify-between">
+              {OUR_SERVICES.map((item:linkProps, idx:number) => {
+                const IconAndColor = [
+                  {
+                    icon: <ComputerIcon size={30} className="text-black" />,
+                    color: 'bg-red-100'
+                  },
+                  {
+                    icon: <SearchIcon size={30} className="text-black" />,
+                    color: 'bg-blue-100'
+                  },
+                  {
+                    icon: <MegaPhoneIcon size={30} className="text-black" />,
+                    color: 'bg-purple-100'
+                  },
+                  {
+                    icon: <FeatherIcon size={30} className="text-black" />,
+                    color: 'bg-red-100'
+                  }
+                ]
+                return (
+                  <Service item={item} key={item.id} icon={IconAndColor[idx].icon} color={IconAndColor[idx].color} />
+                )
+              })}
+            </div>
+          </div>
+        </ContentContainer>
+      </section>
+      
+      {/* abous us */}
+      <section id="about-us" className="py-10 md:py-15 lg:py-25">
+        <ContentContainer>
+          <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center md:justify-between">
+            {/* image */}
+            <div className="relative w-full md:w-[45%] h-[300px] md:h-[400px] xl:h-[550px]">
+              {/* decoration */}
+              <div className="absolute top-0 left-0">
+                <Image src={'/image/doodle1.svg'} width={100} height={100} alt="doodle-1" className="" />
+              </div>
 
+              <Image src={'/image/profil-jasa-website-surabaya-.webp'} width={300} height={300} alt="profil-jasa-website-surabaya-.webp" className="w-full h-full" />
+            </div>
+
+            {/* typewriter */}
+            <div className="w-full md:w-[50%] space-y-6">
+              <div className="space-y-1">
+                <span className="text-sm md:text-md text-gray-500 uppercase">tentang kami</span>
+                <h1 className="capitalize font-semibold text-gray-700 text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]">jasa pembuatan <span className="text-purple-500">website</span> terbaik no.1 surabaya</h1>
+              </div>
+              <p className="text-sm lg:text-md xl:text-lg text-justify text-gray-800">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum atque quasi porro aperiam. Alias quas dolores saepe quod, illo cupiditate cumque ipsum, vitae vero dicta a accusantium, perferendis aliquam illum.</p>
+              <p className="text-sm lg:text-md xl:text-lg text-justify text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi non, voluptates natus nihil, ducimus minima omnis culpa dolor similique dignissimos quam doloribus sequi exercitationem labore?</p>
             </div>
           </div>
         </ContentContainer>

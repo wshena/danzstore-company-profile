@@ -1,7 +1,40 @@
 import { IoMdMenu, IoMdCloseCircleOutline, IoMdMail } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
+import { FaWhatsapp, FaFeatherAlt } from "react-icons/fa";
+import { FaInstagram, FaMagnifyingGlass } from "react-icons/fa6";
+import { RiComputerLine } from "react-icons/ri";
+import { BsFillMegaphoneFill } from "react-icons/bs";
+import { MdOutlinePhoneIphone } from "react-icons/md";
+
+export const FeatherIcon = ({size, className}:iconProps) => {
+  return (
+    <FaFeatherAlt size={size} color="" className={className} />
+  )
+}
+
+export const SearchIcon = ({size, className}:iconProps) => {
+  return (
+    <FaMagnifyingGlass size={size} color="" className={className} />
+  )
+}
+
+export const ComputerIcon = ({size, className}:iconProps) => {
+  return (
+    <RiComputerLine size={size} color="" className={className} />
+  )
+}
+
+export const MegaPhoneIcon = ({size, className}:iconProps) => {
+  return (
+    <BsFillMegaphoneFill size={size} color="" className={className} />
+  )
+}
+
+export const PhoneIcon = ({size, className}:iconProps) => {
+  return (
+    <MdOutlinePhoneIphone size={size} color="" className={className} />
+  )
+}
 
 export const MailIcon = ({size, className}:iconProps) => {
   return (
