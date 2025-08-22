@@ -6,18 +6,21 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="pt-25 md:pt-30 relative overflow-hidden">
+      {/* background color */}
       <div className="absolute inset-0 bg-[url(/image/bg-jasa-web-sby.png)] bg-cover opacity-30 z-0 transform -skew-y-5 -translate-y-1/8"/>
+      
       <ContentContainer>
+        {/* landing section */}
         <section id="landing" className="relative py-10 md:py-7 flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-6">
           {/* typowriting */}
           <div className="w-full md:w-[50%] space-y-6">
-            <h1 className="capitalize text-[2rem] lg:text-[3rem] font-semibold">
+            <h1 className="capitalize text-[2rem] lg:text-[3rem] font-semibold text-gray-700">
               jasa pembuatan <span className="text-purple-500">website</span> terbaik di surabaya
             </h1>
             <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ipsa iure sint dolorum cum omnis.</p>
             <div className="flex items-center gap-2">
               <Link href={'#'}>
-                <Button className="bg-purple-400 shadow-md cursor-pointer hover:scale-105 text-sm font-semibold">
+                <Button className="bg-purple-400 shadow-md cursor-pointer hover:scale-105 text-sm font-semibold text-white">
                   <span>promo website</span>
                 </Button>
               </Link>

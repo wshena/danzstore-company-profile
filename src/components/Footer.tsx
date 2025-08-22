@@ -46,7 +46,7 @@ const Footer = () => {
   return (
     <footer className="w-full">
       <ContentContainer>
-        <div className="py-5 md:py-8 space-y-10">
+        <div className="py-10 md:py-20 space-y-10">
           {/* links */}
           <div className='w-full flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-10 md:gap-6 lg:gap-0 items-start md:justify-between'>
             {/* menu links */}

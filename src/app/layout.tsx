@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppContainer from "@/components/container/AppContainer";
+import ConsultSection from "@/components/sections/ConsultSection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <AppContainer>
           <Navbar />
           {children}
+          <ConsultSection />
           <Footer />
         </AppContainer>
       </body>
