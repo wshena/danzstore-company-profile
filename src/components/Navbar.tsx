@@ -5,6 +5,7 @@ import { NAV_LINKS } from '@/const'
 import Link from 'next/link'
 import MobileNavMenuButton from './buttons/MobileNavMenuButton'
 import Image from 'next/image'
+import Logo from './Logo'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -38,9 +39,7 @@ const Navbar = () => {
       <ContentContainer>
         <nav className='text-black font-semibold flex items-center justify-between py-5'>
           {/* logo */}
-          <Link href={'/'}>
-            <Image src={'/image/Logo.jpeg'} width={50} height={60} alt='danzstore-logo' />
-          </Link>
+          <Logo />
 
           {/* tablet and desktop links */}
           <ul className="hidden md:flex items-center gap-6">

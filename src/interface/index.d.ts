@@ -2,6 +2,7 @@ interface linkProps {
   id: number | string,
   label: string,
   link: string
+  icon?: React.ReactNode
 }
 
 interface navLinkProps {
