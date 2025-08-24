@@ -1,10 +1,16 @@
 import { IoMdMenu, IoMdCloseCircleOutline, IoMdMail } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
-import { FaWhatsapp, FaCheck, FaFeatherAlt, FaRegBookmark, FaAngleRight, FaRegCircle } from "react-icons/fa";
+import { FaWhatsapp, FaClock, FaCheck, FaFeatherAlt, FaRegBookmark, FaAngleRight, FaRegCircle } from "react-icons/fa";
 import { FaToggleOff, FaToggleOn, FaInstagram, FaMagnifyingGlass } from "react-icons/fa6";
 import { RiComputerLine } from "react-icons/ri";
 import { BsFillMegaphoneFill } from "react-icons/bs";
 import { MdOutlinePhoneIphone } from "react-icons/md";
+
+export const ClockIcon = ({size, className}:iconProps) => {
+  return (
+    <FaClock size={size} color="" className={className} />
+  )
+}
 
 export const BookMarkIcon = ({size, className}:iconProps) => {
   return (
