@@ -190,3 +190,46 @@ export const DIGITAL_SERVICES = [
     price: 'Rp Custom / item'
   },
 ]
+
+export const QUESTIONS = [
+  {
+    id: 1,
+    question: 'Apakah membuat website selalu mahal?',
+    answer: 'Membuat website itu murah jika dibandingkan dengan apa yang akan didapatkan kedepannya bagi kemajuan suatu bisnis atau perusahaan. Mau bikin website dengan harga murah? kami solusinya. Mulai dari 700ribuan saja Anda sudah bisa punya website lho.'
+  },
+  {
+    id: 2,
+    question: 'Apakah membuat website selalu mahal?',
+    answer: 'Membuat website itu murah jika dibandingkan dengan apa yang akan didapatkan kedepannya bagi kemajuan suatu bisnis atau perusahaan. Mau bikin website dengan harga murah? kami solusinya. Mulai dari 700ribuan saja Anda sudah bisa punya website lho.'
+  },
+  {
+    id: 3,
+    question: 'Apakah membuat website selalu mahal?',
+    answer: 'Membuat website itu murah jika dibandingkan dengan apa yang akan didapatkan kedepannya bagi kemajuan suatu bisnis atau perusahaan. Mau bikin website dengan harga murah? kami solusinya. Mulai dari 700ribuan saja Anda sudah bisa punya website lho.'
+  },
+  {
+    id: 4,
+    question: 'Apakah membuat website selalu mahal?',
+    answer: 'Membuat website itu murah jika dibandingkan dengan apa yang akan didapatkan kedepannya bagi kemajuan suatu bisnis atau perusahaan. Mau bikin website dengan harga murah? kami solusinya. Mulai dari 700ribuan saja Anda sudah bisa punya website lho.'
+  },
+  {
+    id: 5,
+    question: 'Apakah membuat website selalu mahal?',
+    answer: 'Membuat website itu murah jika dibandingkan dengan apa yang akan didapatkan kedepannya bagi kemajuan suatu bisnis atau perusahaan. Mau bikin website dengan harga murah? kami solusinya. Mulai dari 700ribuan saja Anda sudah bisa punya website lho.'
+  },
+  {
+    id: 6,
+    question: 'Apakah membuat website selalu mahal?',
+    answer: 'Membuat website itu murah jika dibandingkan dengan apa yang akan didapatkan kedepannya bagi kemajuan suatu bisnis atau perusahaan. Mau bikin website dengan harga murah? kami solusinya. Mulai dari 700ribuan saja Anda sudah bisa punya website lho.'
+  },
+  {
+    id: 7,
+    question: 'Apakah membuat website selalu mahal?',
+    answer: 'Membuat website itu murah jika dibandingkan dengan apa yang akan didapatkan kedepannya bagi kemajuan suatu bisnis atau perusahaan. Mau bikin website dengan harga murah? kami solusinya. Mulai dari 700ribuan saja Anda sudah bisa punya website lho.'
+  },
+  {
+    id: 8,
+    question: 'Apakah membuat website selalu mahal?',
+    answer: 'Membuat website itu murah jika dibandingkan dengan apa yang akan didapatkan kedepannya bagi kemajuan suatu bisnis atau perusahaan. Mau bikin website dengan harga murah? kami solusinya. Mulai dari 700ribuan saja Anda sudah bisa punya website lho.'
+  },
+]
